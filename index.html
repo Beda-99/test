@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="https://i.pinimg.com/736x/fd/7f/39/fd7f396a46407462b5c9e698832005b2.jpg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr.Vue | Learn HTML Professionally</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Outfit', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+nav{
+    width:100%;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    backdrop-filter: blur(10px);
+    background:rgba(255,255,255,0.05);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+    z-index:1000;
+}
+
+nav h2{
+    font-size:24px;
+    font-weight:700;
+    color:#00e0ff;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#00e0ff;
+}
+
+/* HERO SECTION */
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:120px 8% 60px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+}
+
+.hero-text h1{
+    font-size:50px;
+    margin-bottom:20px;
+    background:linear-gradient(90deg,#00e0ff,#00ffa3);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero-text p{
+    font-size:18px;
+    line-height:1.7;
+    margin-bottom:30px;
+    color:#dcdcdc;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:linear-gradient(90deg,#00e0ff,#00ffa3);
+    color:#000;
+    font-weight:600;
+    border-radius:40px;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.btn:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px #00ffa3;
+}
+
+/* HERO IMAGE */
+.hero-image{
+    flex:1;
+    min-width:300px;
+    text-align:center;
+}
+
+.hero-image img{
+    width:90%;
+    max-width:450px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* FEATURES SECTION */
+.features{
+    padding:80px 8%;
+    text-align:center;
+    background:#111827;
+}
+
+.features h2{
+    font-size:36px;
+    margin-bottom:50px;
+    color:#00e0ff;
+}
+
+.feature-box{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:30px;
+    border-radius:20px;
+    width:280px;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    background:rgba(0,224,255,0.1);
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#00ffa3;
+}
+
+.card p{
+    font-size:15px;
+    color:#ccc;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:25px;
+    background:#0b0f15;
+    color:#888;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:36px;
+    }
+
+    nav ul{
+        display:none;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <h2>Mr.Vue</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Lessons</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Master HTML With Mr.Vue</h1>
+        <p>
+            Mr.Vue is a professional platform designed to teach and study HTML 
+            from beginner to advanced level. Learn step-by-step, practice with 
+            real projects, and become a confident web developer.
+        </p>
+        <a href="form.html" class="btn">Get Started</a>
+    </div>
+
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159" alt="Coding Image">
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+    <h2>Why Learn With Mr.Vue?</h2>
+
+    <div class="feature-box">
+        <div class="card">
+            <h3>Step-by-Step Lessons</h3>
+            <p>Clear explanations from beginner to advanced HTML concepts.</p>
+        </div>
+
+        <div class="card">
+            <h3>Real Projects</h3>
+            <p>Build practical websites and strengthen your coding skills.</p>
+        </div>
+
+        <div class="card">
+            <h3>Professional Design</h3>
+            <p>Learn how to structure and design modern websites.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    © 2026 Mr.Vue | Learn HTML Professionally
+</footer>
+
+</body>
+</html>

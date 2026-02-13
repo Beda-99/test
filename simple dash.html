@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="icon" href="https://i.pinimg.com/736x/fd/7f/39/fd7f396a46407462b5c9e698832005b2.jpg" type="image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mr.Vue | Complete HTML Course</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Outfit', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    line-height:1.7;
+}
+
+/* NAV */
+nav{
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+
+nav h2{
+    color:#00e0ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HEADER */
+.header{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.header h1{
+    font-size:42px;
+    background:linear-gradient(90deg,#00e0ff,#00ffa3);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.header p{
+    margin-top:15px;
+    color:#ccc;
+}
+
+/* SECTION */
+.section{
+    padding:60px 8%;
+}
+
+.section h2{
+    margin-bottom:20px;
+    color:#00ffa3;
+}
+
+.card{
+    background:rgba(255,255,255,0.05);
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+}
+
+.card code{
+    display:block;
+    background:#000;
+    padding:10px;
+    border-radius:8px;
+    margin-top:10px;
+    color:#00e0ff;
+    font-size:14px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0b0f15;
+    color:#888;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .header h1{
+        font-size:30px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <h2>Mr.Vue</h2>
+    <a href="index.html">⬅ Back Home</a>
+</nav>
+
+<section class="header">
+    <h1>Complete HTML Course</h1>
+    <p>Learn HTML from Beginner to Advanced with Mr.Vue</p>
+</section>
+
+<!-- WHAT IS HTML -->
+<section class="section">
+    <h2>What is HTML?</h2>
+    <div class="card">
+        <p>
+            HTML stands for <strong>HyperText Markup Language</strong>.
+            It is the standard language used to create webpages.
+            HTML structures content like text, images, links, videos, and forms.
+        </p>
+
+        <p>
+            HTML is not a programming language — it is a markup language
+            that tells the browser how to display content.
+        </p>
+    </div>
+</section>
+
+<!-- WHY HTML -->
+<section class="section">
+    <h2>Why Learn HTML?</h2>
+    <div class="card">
+        <p>✔ It is the foundation of all websites.</p>
+        <p>✔ Easy to learn for beginners.</p>
+        <p>✔ Required for web development.</p>
+        <p>✔ Works with CSS and JavaScript.</p>
+    </div>
+</section>
+
+<!-- BEGINNER LEVEL -->
+<section class="section">
+    <h2>Beginner Level</h2>
+
+    <div class="card">
+        <h3>Basic Structure</h3>
+        <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Text Tags</h3>
+        <code>
+&lt;p&gt;Paragraph&lt;/p&gt;
+&lt;b&gt;Bold&lt;/b&gt;
+&lt;i&gt;Italic&lt;/i&gt;
+&lt;br&gt;
+        </code>
+    </div>
+</section>
+
+<!-- INTERMEDIATE LEVEL -->
+<section class="section">
+    <h2>Intermediate Level</h2>
+
+    <div class="card">
+        <h3>Lists</h3>
+        <code>
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Forms</h3>
+        <code>
+&lt;form&gt;
+    &lt;input type="text"&gt;
+    &lt;input type="email"&gt;
+    &lt;button&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Tables</h3>
+        <code>
+&lt;table&gt;
+&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td&gt;John&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+        </code>
+    </div>
+</section>
+
+<!-- ADVANCED LEVEL -->
+<section class="section">
+    <h2>Advanced Level</h2>
+
+    <div class="card">
+        <h3>Semantic Tags</h3>
+        <code>
+&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;section&gt;&lt;/section&gt;
+&lt;article&gt;&lt;/article&gt;
+&lt;footer&gt;&lt;/footer&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Multimedia</h3>
+        <code>
+&lt;video controls&gt;
+    &lt;source src="video.mp4"&gt;
+&lt;/video&gt;
+
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3"&gt;
+&lt;/audio&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Meta Tags & SEO</h3>
+        <code>
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+        </code>
+    </div>
+
+</section>
+
+<!-- ATTRIBUTES LESSON -->
+<section class="section">
+    <h2>HTML Attributes</h2>
+
+    <div class="card">
+        <h3>What Are Attributes?</h3>
+        <p>Attributes give extra information about HTML elements. They are placed inside the opening tag.</p>
+        <code>
+&lt;a href="https://example.com"&gt;Visit&lt;/a&gt;
+&lt;img src="image.jpg" alt="My Image"&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Common Attributes</h3>
+        <p><strong>href</strong> – Link destination</p>
+        <p><strong>src</strong> – Image source</p>
+        <p><strong>alt</strong> – Alternative text</p>
+        <p><strong>class</strong> – Used for styling</p>
+        <p><strong>id</strong> – Unique identifier</p>
+    </div>
+</section>
+
+<!-- ADVANCED FORMS -->
+<section class="section">
+    <h2>Advanced HTML Forms</h2>
+
+    <div class="card">
+        <h3>Form Input Types</h3>
+        <code>
+&lt;input type="text"&gt;
+&lt;input type="email"&gt;
+&lt;input type="password"&gt;
+&lt;input type="date"&gt;
+&lt;input type="checkbox"&gt;
+&lt;input type="radio"&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Form Validation</h3>
+        <code>
+&lt;input type="email" required&gt;
+&lt;input type="text" minlength="3"&gt;
+        </code>
+    </div>
+</section>
+
+<!-- MEDIA LESSON -->
+<section class="section">
+    <h2>HTML Multimedia</h2>
+
+    <div class="card">
+        <h3>Embedding Video</h3>
+        <code>
+&lt;video controls width="300"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+&lt;/video&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Embedding Audio</h3>
+        <code>
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+&lt;/audio&gt;
+        </code>
+    </div>
+</section>
+
+<!-- SEMANTIC STRUCTURE -->
+<section class="section">
+    <h2>Semantic HTML Layout</h2>
+
+    <div class="card">
+        <h3>Why Semantic HTML?</h3>
+        <p>Semantic tags improve readability, SEO, and accessibility.</p>
+        <code>
+&lt;header&gt;&lt;/header&gt;
+&lt;nav&gt;&lt;/nav&gt;
+&lt;main&gt;&lt;/main&gt;
+&lt;section&gt;&lt;/section&gt;
+&lt;article&gt;&lt;/article&gt;
+&lt;footer&gt;&lt;/footer&gt;
+        </code>
+    </div>
+</section>
+
+<!-- SEO & BEST PRACTICES -->
+<section class="section">
+    <h2>SEO & Best Practices</h2>
+
+    <div class="card">
+        <h3>Meta Tags</h3>
+        <code>
+&lt;meta name="description" content="Learn HTML with Mr.Vue"&gt;
+&lt;meta name="keywords" content="HTML, Web Design"&gt;
+        </code>
+    </div>
+
+    <div class="card">
+        <h3>Best Practices</h3>
+        <p>✔ Use proper indentation</p>
+        <p>✔ Use semantic elements</p>
+        <p>✔ Optimize images</p>
+        <p>✔ Keep code clean and organized</p>
+    </div>
+</section>
+
+<!-- MINI PROJECT SECTION -->
+<section class="section">
+    <h2>Mini Project Practice</h2>
+
+    <div class="card">
+        <h3>Build a Simple Portfolio Page</h3>
+        <p>Create a webpage using:</p>
+        <p>✔ Headings</p>
+        <p>✔ Paragraphs</p>
+        <p>✔ Images</p>
+        <p>✔ Links</p>
+        <p>✔ Contact Form</p>
+    </div>
+
+    <div class="card">
+        <h3>Build a Registration Form</h3>
+        <p>Use input types, validation, and semantic layout.</p>
+    </div>
+</section>
+
+
+<footer>
+    © 2026 Mr.Vue | Complete HTML Learning Platform
+</footer>
+
+</body>
+</html>
